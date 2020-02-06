@@ -61,6 +61,12 @@ Then,
 
 Comment lines 68 and 69, then uncomment line 81. Reboot or login and logout again, and your sudo password will be switched to your user password, rather than the root users password.
 
+To get audio working, type:
+
+# sudo zypper in --no-recommends xfce4-mixer
+
+Then, unmute 'Left Headphone Mixer Left DAC' and 'Right Headphone Mixer Right DAC'.
+
 Don't bother running Gnome on Xorg, it runs like garbage. Oddly enough, Fedora on pinebook pro has the inverse problem. Who knows?
 Anyway, hope you enjoy it!
 
