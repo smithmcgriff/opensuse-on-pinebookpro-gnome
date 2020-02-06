@@ -10,7 +10,7 @@ Instructions: You must have more than 16G of space to write this image! Preferab
 To write image to sdcard from a linux pc: xzcat opensuse-tumbleweed-pinebookpro-
 gnome-1.0.img.xz | dd bs=4M of=/dev/mmcblkX iflag=fullblock oflag=direct status=progress; sync
 
-Because of the level of compression I used, writing this image to internal disk from pinebookpro via an os running on a sdcard to internal memory requires you unxz --threads=(max number of threads your pc processor has) -6e opensuse-tumbleweed-pinebookpro-gnome-0.8.img.xz
+Because of the level of compression I used, writing this image to internal disk from pinebookpro via an os running on a sdcard to internal memory requires you unxz --threads=(max number of threads your pc processor has) -6e opensuse-tumbleweed-pinebookpro-gnome-1.0.img.xz
 
 from a linux pc, then you can copy the disk image to the os running on pinebookpro via sdcard and enter: dd if=opensuse-tumbleweed-pinebookpro-gnome-1.0.img of=/dev/mmcblkX oflag=sync status=progress bs=32M
 
